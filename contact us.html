@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>BSIT-3A</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#"class="active">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="png/stars.png" id="stars">
+        <img src="png/moon.png" id="moon">
+        <img src="png/clouds.png" id="">
+        <h2 id="text">Contact Us</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="png/tree.png" id="mountains_front">
+    </section>
+    <ul>
+    <div class="sec" id="sec">
+<div class="row">
+    <div class="column">
+      <div class="card">
+          <br>
+        <img src="png/memr.jpg" alt="Jane" style="width:100%; border-radius: 20%; border: 10px solid #ffffff;">
+        <div class="container">
+          <h2>Jamela Charess Cutanda</h2>
+          <p class="title">IT Student</p>
+          <p>3rd yr Student of ACLC Bukidnon</p>
+          <br>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="card">
+              <br>
+
+            <div class="container">
+              <h2>About Me</h2>
+              <p class="title">.......................................</p>
+              <p>I am a I.T student and a graphic designer today I am making my own profiles, about me i love landscapes especially the moon cause it's pretty and the stars of the world someday i want to travel the space if given a chance</p>
+              <br>
+              <p>- Studied Graphics Designing. <br>
+                - Gained extensive training and accomplished all courses for graphics designing.</p>
+                <br>
+            </div>
+          </div>
+        </div>
+  
+   
+        <div class="column">
+            <div class="content">
+              <img src="png/web1.jpg" alt="Nature" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <img src="png/web2.jpg" alt="Mountains" style="width:100%">
+              <h3>My Work</h3>
+              <p>Lorem ipsum..</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <div class="content">
+                <img src="png/web3.jpg" alt="Mountains" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="png/web4.jpg" alt="Lights" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <img src="png/web5.jpg" alt="Nature" style="width:100%">
+                <h3>My Work</h3>
+                <p>Lorem ipsum..</p>
+              </div>
+            </div>
+           
+        
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 +'px';
+            moon.style.top = value * 1.05 +'px';
+            mountains_behind.style.top = value * 1.05 +'px';
+            mountains_front.style.top = value * 0 +'px';
+            text.style.marginRight = value * 4 +'px';
+            text.style.marginTop = value * 1.5 +'px';
+            btn.style.marginTop = value * 1.5 +'px';
+            header.style.top = value * 0.5 +'px';
+        })
+    </script>
+</body>
+</html>
